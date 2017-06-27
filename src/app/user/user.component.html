@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <h1 class="text-center">Angular practice</h1>
+      <hr/>
+      <label for="userName">Username:</label>
+      <input id="userName" class="form-control" type="text" [(ngModel)]="userName"/>
+      <br/>
+      <h2>Hello {{userName == '' ? 'user' : userName}} !</h2>
+      <br/>
+      <button class="btn btn-primary" (click)="resetUserName()" [disabled]="userName.length == 0">reset</button>
+    </div>
+  </div>
+</div>
